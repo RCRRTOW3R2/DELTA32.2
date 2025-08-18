@@ -27,7 +27,8 @@ const Navbar = () => {
     <nav className="bg-primary-light py-4 px-6 md:px-12 sticky top-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <span className="text-xl font-semibold">Delta32</span>
+          <Logo className="h-8 w-auto" />
+          <span className="ml-2 text-xl font-semibold">Delta32</span>
         </Link>
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">

@@ -6,7 +6,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
           <div className="flex items-center mb-6 md:mb-0">
-            <span className="text-lg font-semibold">Delta32</span>
+            <Logo className="h-6 w-auto" />
+            <span className="ml-2 text-lg font-semibold">Delta32</span>
           </div>
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
             <Link
