@@ -12,13 +12,13 @@ const Logo: React.FC<LogoProps> = ({
   const getLogoSrc = () => {
     switch (variant) {
       case 'dark':
-        return '/darklogo.png'
+        return '/components/darklogo.png'
       case 'light':
-        return '/lightlogo.png'
+        return '/components/lightlogo.png'
       case 'noBackground':
-        return '/LOGOnoBack.png'
+        return '/components/LOGOnoBack.png'
       default:
-        return '/LOGO.png'
+        return '/components/LOGO.png'
     }
   }
 

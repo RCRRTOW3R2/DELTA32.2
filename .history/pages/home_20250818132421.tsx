@@ -13,6 +13,7 @@ const Home = () => {
       <section className="bg-primary px-6 py-20 md:py-32">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center text-center">
+            <Logo className="h-20 w-20 mb-6" />
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="text-secondary">Δ</span>32
             </h1>
