@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { ArrowUpIcon, ArrowDownIcon, Loader2Icon } from 'lucide-react'
 import {
   StockData,
-  fetchGoogleSheetsData,
+  fetchStockData,
   formatMarketCap,
   formatLargeNumber,
-} from '../utils/googleSheetsApi'
+} from '../utils/api'
 const Watchlist = () => {
   const [stocks, setStocks] = useState<StockData[]>([])
   const [loading, setLoading] = useState<boolean>(true)
@@ -16,7 +16,7 @@ const Watchlist = () => {
   useEffect(() => {
     const loadStocks = async () => {
       try {
-        const data = await fetchGoogleSheetsData()
+        const data = await fetchStockData()
         setStocks(data)
         setLoading(false)
       } catch (error) {

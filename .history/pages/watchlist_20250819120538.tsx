@@ -16,7 +16,7 @@ const Watchlist = () => {
   useEffect(() => {
     const loadStocks = async () => {
       try {
-        const data = await fetchGoogleSheetsData()
+        const data = await fetchStockData()
         setStocks(data)
         setLoading(false)
       } catch (error) {
