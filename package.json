@@ -1,13 +1,23 @@
 {
-  "name": "delta32-investment-platform",
-  "version": "1.0.0",
+  "name": "delta32-momentum-platform",
+  "version": "2.0.0",
   "private": true,
-  "description": "Delta32 Investment Research Platform",
+  "description": "DELTA32.2 - Advanced Momentum Trading Platform with Reddit Sentiment Analysis",
+  "homepage": "https://RCRRTOW3R2.github.io/DELTA32.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RCRRTOW3R2/DELTA32.2.git"
+  },
+  "keywords": ["momentum trading", "technical analysis", "reddit sentiment", "stock analysis", "trading platform"],
+  "author": "RCRRTOW3R2",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "deploy": "npm run build && gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "react": "^18.2.0",
