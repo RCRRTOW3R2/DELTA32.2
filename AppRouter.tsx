@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { App } from './App'
 import Home from './pages/home'
 import Portfolio from './pages/portfolio'
@@ -7,9 +7,10 @@ import Momentum from './pages/momentum'
 import Reddit from './pages/reddit'
 import Watchlist from './pages/watchlist'
 import Contact from './pages/contact'
+
 export function AppRouter() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
@@ -20,6 +21,6 @@ export function AppRouter() {
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }

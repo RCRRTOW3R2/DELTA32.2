@@ -10,8 +10,8 @@ export interface StockData {
 }
 
 // Google Sheets configuration
-const GOOGLE_SHEETS_API_KEY = process.env.REACT_APP_GOOGLE_SHEETS_API_KEY || ''
-const SHEET_ID = process.env.REACT_APP_GOOGLE_SHEET_ID || ''
+const GOOGLE_SHEETS_API_KEY = import.meta.env.VITE_GOOGLE_SHEETS_API_KEY || ''
+const SHEET_ID = import.meta.env.VITE_GOOGLE_SHEET_ID || ''
 const SHEET_RANGE = 'STOCKS!A:G' // Matches your STOCKS tab structure
 
 export const fetchGoogleSheetsData = async (): Promise<StockData[]> => {
