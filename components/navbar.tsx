@@ -14,6 +14,14 @@ const Navbar = () => {
       path: '/portfolio',
     },
     {
+      name: 'Momentum',
+      path: '/momentum',
+    },
+    {
+      name: 'Reddit',
+      path: '/reddit',
+    },
+    {
       name: 'Watchlist',
       path: '/watchlist',
     },
